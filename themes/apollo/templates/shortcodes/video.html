@@ -1,0 +1,9 @@
+<div class="local-video-container {% if class %}{{class}}{% endif %}">
+  <video 
+    width="100%" 
+    controls
+    {% if autoplay %}autoplay muted loop playsinline{% endif %}>
+    <source src="{{ src }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
