@@ -2,7 +2,7 @@
 title = "Over mij"
 +++
 <p align="left">
-  <img src="about/thimo.jpg" width="50%" alt="Foto van Thimo"/>
+  <img src="thimo.jpg" width="50%" alt="Foto van Thimo"/>
   <br>
 </p>
 
