@@ -26,4 +26,6 @@ template = "homepage.html"
 </div>
 
 # [About me](about)
+I am a Computer Vision Engineer bridging the gap between complex theory and real-world execution. By combining a practical HBO Bachelor’s with an analytical WO Master’s, I turn ambitious concepts into working prototypes. **[Read more here](about)**
 # [Projects](projects)
+Here you’ll find a showcase of my work spanning **Computer Vision, Robotics, and Deep Learning**. **[Explore my projects](projects)**

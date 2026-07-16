@@ -5,7 +5,7 @@
                 <img alt="{{ config.title }}" src="{{ get_url(path=config.extra.logo) }}" />
             </a>
         {% else %}
-            <a href={{ config.base_url }}>{{ config.title }}</a>
+            <a href={{ get_url(path="" , lang=lang) }}>{{ config.title }}</a>
         {% endif %}
 
 
