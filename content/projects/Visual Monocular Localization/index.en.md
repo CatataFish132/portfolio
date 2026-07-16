@@ -14,6 +14,8 @@ mathjax = true
   <br>
 </p>
 
+You can read the full paper here: [Download PDF (Self Driving Challenge Article Thimo Veldema.pdf)](<Self Driving Challenge Article Thimo Veldema.pdf>)
+
 # Introduction
 
 Developed and deployed a real-time monocular localization system for an autonomous vehicle navigating a closed test track for the annual Dutch RDW (Vehicle Authority) Self Driving Challenge. By utilizing only a single forward-facing camera, the system successfully estimated the vehicle’s position and orientation on the track. This was achieved by combining visual motion tracking (odometry) with real-time lane-line detection, constantly correcting the vehicle's path against a predefined map.
