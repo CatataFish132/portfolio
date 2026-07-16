@@ -1,0 +1,43 @@
+# Write a standard .gitignore file for a Zola static website project.
+# Standard Zola directory structure puts output in 'public/'.
+# There may also be local cache or IDE-specific files.
+
+gitignore_content = """# Zola output directory
+public/
+
+# Local cache/build artifacts
+.sass-cache/
+.zola-cache/
+sass-cache/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+db.files
+desktop.ini
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*~
+
+# Package manager files (if using Tailwind/npm for assets)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environmental variables (if any)
+.env
+.env*.local
+"""
+
+with open(".gitignore", "w", encoding="utf-8") as f:
+    f.write(gitignore_content)
+
+print("Created .gitignore file successfully.")

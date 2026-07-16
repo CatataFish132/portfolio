@@ -1,0 +1,40 @@
+theme = "apollo"
+default_language = "nl"
+base_url = "https://example.com"
+compile_sass = true
+build_search_index = false
+taxonomies = [{ name = "tags" }]
+title = "Portfolio Thimo Veldema"
+
+[extra]
+theme = "auto"
+socials = [
+  # Configure socials here
+]
+
+menu = [
+    { url = "", name = "Home" },
+    { url = "projects", name = "Projecten" },
+    { url = "blog", name = "Blog" },
+    { url = "over-mij", name = "Over Mij" }
+]
+
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[translations]
+menu_home = "Home"
+menu_projects = "Projecten"
+menu_blog = "Blog"
+menu_about = "Over mij"
+
+[languages.en.translations]
+menu_home = "Home"
+menu_projects = "Projects"
+menu_blog = "Blog"
+menu_about = "About me"
+
+[languages.en]
+title = "Portfolio"
