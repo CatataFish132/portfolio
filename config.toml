@@ -4,7 +4,7 @@ base_url = "https://thimo.veldema.net"
 compile_sass = true
 build_search_index = false
 taxonomies = [{ name = "tags" }]
-title = "Portfolio Thimo Veldema"
+title = "Thimo Veldema"
 
 [extra]
 theme = "auto"
@@ -37,4 +37,4 @@ menu_blog = "Blog"
 menu_about = "About me"
 
 [languages.en]
-title = "Portfolio"
+title = "Thimo Veldema"

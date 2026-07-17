@@ -6,14 +6,15 @@ title = "Over mij"
   <br>
 </p>
 
-As a Computer Vision Engineer with an HBO Bachelor’s and a WO Master’s, I bridge the gap between deep research and practical execution.
+Als Computer Vision Engineer overbrug ik het gat tussen theorie en praktijk. Hierbij combineer ik de praktische basis van een HBO-bachelor met de onderzoeksmatige kant van een WO-master.
 
-**I am at my best when going quickly from a concept to a working prototype.** I don't follow rigid blueprints; instead, I rely on my intuition to build creative, out-of-the-box solutions that get the job done. I love learning new things on the fly and immediately applying them to solve real problems.
+Ik ben sterk in het vertalen van abstracte concepten naar een werkend prototype, waardoor bedrijven snel nieuwe ideeën kunnen testen. In plaats van vast te houden aan rigide blauwdrukken, vind ik het leuk om creatieve, out-of-the-box oplossingen te bedenken die écht werken.
 
-### Technical Expertise
-- **Computer Vision & ML:** OpenCV, PyTorch, Scikit-learn (Sklearn)
-- **Data Analysis & Core Math:** NumPy, Pandas
-- **Programming Languages:** Python, C/C++, Rust, Julia
-- **Robotics:** ROS2, Gazebo
-- **Software Development:** Git, CI/CD
+In mijn vrije tijd ben ik meestal aan het stoeien met Linux, mijn 3D-printer aan het kalibreren, bordspellen aan het spelen of een rondje aan het fietsen op mijn mountainbike.
 
+### Technische Expertise
+- **Computer Vision & ML:** OpenCV, PyTorch, Scikit-learn
+- **Data-analyse & Wiskunde:** NumPy, Pandas
+- **Robotica:** ROS2, Gazebo
+- **Softwareontwikkeling:** Git, CI/CD, Linux
+- **Programmeertalen:** Python, C/C++, Rust, Julia, Java, JS

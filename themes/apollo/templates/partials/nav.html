@@ -27,8 +27,12 @@
     <div class="right-nav">
             <a href={{ get_url(path="", lang=lang) }} style="margin-right: 0.5em">{{ trans(key="menu_home", lang=lang) }}</a>
             <a href={{ get_url(path="projects", lang=lang) }} style="margin-right: 0.5em">{{ trans(key="menu_projects", lang=lang) }}</a>
-            <a href={{ get_url(path="blog", lang=lang) }} style="margin-right: 0.5em">{{ trans(key="menu_blog", lang=lang) }}</a>
+            <a href={{ get_url(path="posts", lang=lang) }} style="margin-right: 0.5em">{{ trans(key="menu_blog", lang=lang) }}</a>
             <a href={{ get_url(path="about", lang=lang) }} style="margin-right: 0.5em">{{ trans(key="menu_about", lang=lang) }}</a>
+            <span style="margin-left: 2.0em;">
+                <a href={{ get_url(path="", lang="en") }} style="margin-right: 0.5em">EN</a>
+                <a href={{ get_url(path="", lang="nl") }} style="margin-right: 0.5em">NL</a>
+            </span>
 
         {% if config.build_search_index %}
             <button id="search-button"
