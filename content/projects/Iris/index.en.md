@@ -13,22 +13,22 @@ mathjax = true
 ![Iris](0.webp)
 
 You can read the full paper here: [Download PDF (Iris.pdf)](Iris.pdf)
-## Introduction
+# Introduction
 Developed an advanced biometric iris recognition system that uses cooperative game theory to optimize John Daugman’s traditional feature extraction pipeline. By applying Shapley value-based feature importance, the system mathematically evaluates the individual contribution of 2D Gabor filters to eliminate redundancy. This data-driven approach yields a highly compressed, computationally efficient, and state-of-the-art filter set that achieves an Equal Error Rate (EER) as low as **0.05%**.
-## Project Details
+# Project Details
 - **Core Tech:** Python, OpenCV, NumPy, Shapley Value Optimization, USIT SDK.
 - **Algorithms Used:** 2D Complex Gabor Filters, Hamming Distance with Binary Masking.
 - **Target Datasets:** CASIA-IrisV1, IrisV3, and MMU.
 - **My Role:** Solo Researcher & Computer Vision Engineer.
-## The Challenge
+# The Challenge
 - **Proprietary & Lack of Transparency:** John Daugman’s classic iris code remains the industry benchmark, but the specific optimal configuration of Gabor filters used in modern commercial systems is proprietary and unpublished.
 - **Combinatorial Search Space:** Manually finding the optimal parameters (envelope size, wave orientation, wavelength, and strides) across different Gabor filter combinations creates an exponentially complex search space.
 - **Extreme Alignment Sensitivity:** Minor rotational misalignments or vertical offsets (introduced during imperfect eye segmentation) cause dramatic, false mismatches.
-## Key Features & Actions
+# Key Features & Actions
 - **Easy to use Library:** Packaged the entire pipeline into an intuitive, clean, and easy to understand Python library, allowing other students to run end-to-end iris encoding and matching with just a few lines of code.
 - **Cooperative Game Theory Integration:** Modeled Gabor filters as "players" in a cooperative game, calculating their marginal contribution (Shapley values) to systematically keep high-impact filters and prune redundant ones.
 - **Robust Rotational Alignment:** Developed a dynamic pixel-shifting correction system on the normalized iris band to simulate and find the optimal matching rotation angle.
-## Results
+# Results
 
 ![results](7.png)
 

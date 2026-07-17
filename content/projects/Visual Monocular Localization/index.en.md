@@ -33,7 +33,7 @@ Developed and deployed a real-time monocular localization system for an autonomo
   <img src="3.png" width="48%" alt="Original Camera Input"/>
   <img src="4.png" width="48%" alt="Lane Line Mask"/>
   <br>
-  <em>Figure 3: Raw camera input (left) and the resulting high-contrast binary lane mask (right).</em>
+  <em>Figure 1: Raw camera input (left) and the resulting high-contrast binary lane mask (right).</em>
 </p>
 
 - **Robust Motion Tracking:** Implemented a visual odometry pipeline using STAR keypoint detection and ORB descriptors to track relative vehicle movement between frames, using RANSAC to discard visual noise.
@@ -50,12 +50,12 @@ Developed and deployed a real-time monocular localization system for an autonomo
 <p align="center">
   <img src="12.png" width="100%" alt="Particle Filter Tracking"/>
   <br>
-  <em>Figure 4: Map representation. The green arrow is the Kalman-filtered vehicle pose, surrounded by red particles representing the spatial probability distribution.</em>
+  <em>Figure 3: Map representation. The green arrow is the Kalman-filtered vehicle pose, surrounded by red particles representing the spatial probability distribution.</em>
 </p>
 
 # Results
 
-- **Alignment:** Achieved a lateral (side-to-side) Mean Absolute Error (MAE) of **7 cm** on straight road segments, ensuring the car stayed centered.
+- **Alignment:** Achieved a lateral (side-to-side) Mean Absolute Error (MAE) of **7 cm** on straight road segments.
 - **Heading Accuracy:** Maintained a rotational Mean Absolute Error of just **0.028 radians** on straight stretches.
 - **Adaptive Drifting Recovery:** Successfully navigated complex turns, pedestrian crossings, and stop lines. The system proved robust enough to automatically collapse "uncertain" position estimates the second a recognizable track feature came into view.
 - **Modular Architecture:** Built the entire codebase to be modular, allowing the lane detector or odometry modules to be swapped out easily.

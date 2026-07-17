@@ -15,7 +15,7 @@ You can read the full paper here: [Download PDF (Explainable Forensic Face Recog
 
 # Introduction
 
-Developed an Explainable Forensic Face Recognition (EFFR) model, an innovative "explainable-by-design" biometric system tailored for forensic and legal use. Moving away from traditional deep learning black-box systems, the architecture incorporates international Facial Identification Scientific Working Group (FISWG) guidelines to break facial data into human-verifiable features. By combining deep learning pre-processing with classical computer vision, the model translates complex feature comparisons into Likelihood Ratios (LR) to demonstrate statistical evidence strength.
+Developed an Explainable Forensic Face Recognition (EFFR) model, an innovative "explainable-by-design" biometric system tailored for forensic and legal use. Moving away from traditional deep learning black-box systems, the architecture incorporates international Facial Identification Scientific Working Group (FISWG) guidelines to break facial data into human-verifiable features. By combining deep learning with classical computer vision, the model translates complex feature comparisons into Likelihood Ratios (LR) to demonstrate statistical evidence strength.
 
 # Project Details
 
@@ -34,11 +34,11 @@ Developed an Explainable Forensic Face Recognition (EFFR) model, an innovative "
 
 # Key Features
 
-- **Hybrid AI/Classical Architecture:** Utilized deep learning (HRNet & BiSeNet) for high-precision semantic segmentation and landmark tracking, passing those clean pixel-level outputs into deterministic classical vision pipelines.
+- **Hybrid AI/Classical Architecture:** Utilized deep learning (HRNet & BiSeNet) for high-precision semantic segmentation and landmark detection, passing those pixel-level outputs into deterministic classical vision pipelines.
 - **Anatomical Feature Extractions:**
-    - _Ears:_ Extracted the ear region via face parsing, detected localized points, and mathematically mapped the curvature using second-degree polynomial residuals and root-mean-square angular transitions.
+    - _Ears:_ Extracted the ear region via face parsing, detected localized points, and mathematically mapped the curvature using second-degree polynomial and root-mean-square angular transitions.
     - _Eyebrows:_ Segmented rows into 4 quadrants, deploying a uniform rotation-invariant LBP histogram to differentiate edge/corner bins (representing individual hairs) from flat states (skin) to map density distributions.
-    - _Mouth & Lips:_ Fitted Fourier Shape Descriptors across 4 boundaries to capture lip shapes while running a column-wise 1D Gaussian smooth over regions of interest to extract clean lip fissures.
+    - _Mouth & Lips:_ Fitted Fourier Shape Descriptors across 4 boundaries to capture lip shapes.
     - _Skin:_ Isolated valid regions via erosion, choosing 50 random patches to evaluate micro-textures through multi-radius LBP and GLCM matrices.
 - **Facial Mark Tracking (YOLOv11M):** Trained a middleweight object detection model on high-resolution ($1280\times1280$ pixels) images to detect anomalies like moles or freckles. Used perspective-n-point pose computation (solvePnP) to map 2D image coordinates onto a 3D cylindrical head model to track spatial distances.
 - **Hierarchical Statistical Fusing:** Standardized raw comparison features via a Yeo-Johnson power transform, training a Logistic Regression model over normalized inputs to synthesize features into higher-level units.
